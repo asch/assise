@@ -18,8 +18,7 @@ all:	download
 	(cd jemalloc-4.5.0 && \
 	 ./autogen.sh && \
 	 ./configure && \
-	 make && \
-	 sudo make install)
+	 make)
 
 redownload: REPO_PURGE=1
 redownload: download
